@@ -1,6 +1,8 @@
 # Doodle
 Simple Paint Program
 
+Utilizes the graphics.py package written by John Zelle
+
 ## Tools
 
 ### Circle ------------------------------------------- Triangle:

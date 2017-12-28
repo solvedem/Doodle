@@ -4,12 +4,13 @@ W, H = 400,400
 
 
 class Choice_Panel:
+    
     def __init__(self, window, n):
         buttons = []
         msgs = []
         j = 0
-        f = 1./n/2.
-        k = 1./n
+        f = 1. / n / 2.
+        k = 1. / n
         count = 0
         shapes = ["circle","rect","triangle","quad","key\npainter","color","randomize\nkey\npainter\nsettings","quit"]
         for x in range(1, n + 1):
@@ -17,17 +18,17 @@ class Choice_Panel:
             c2 = Point( k * W, 0 * H )
             c3 = Point( k * W, 1./n * H )
             c4 = Point( j * W, 1./n * H)
-            b = Button(window, c1, c2, c3, c4)
-            msg = Text(Point( f * W, 1./n/2 * H), shapes[count])
+            b = Button( window, c1, c2, c3, c4 )
+            msg = Text(Point( f * W, 1. / n / 2 * H ), shapes[count])
             msg.setSize(8)
             if count == 4 or count == 6:
                 msg.setSize(7)
             msg.draw(window)
             buttons.append(b)
             msgs.append(msg)
-            j += 1./n
-            k += 1./n
-            f += 1./n
+            j += 1. / n
+            k += 1. / n
+            f += 1. / n
             count += 1
         self.buttons = buttons
         self.msgs = msgs

@@ -1,5 +1,5 @@
 # Doodle
-Simple Paint Program
+Paint Program
 
 Utilizes the graphics.py package written by John Zelle
 
